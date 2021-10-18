@@ -2,7 +2,6 @@ import Axios from 'axios'
 import {useCallback, useEffect, useState} from 'react';
 import Tooltip from './Tooltip';
 
-const API_URL = "https://collinkrueger-weapons.herokuapp.com";
 
 function WeaponProperty({propertyID, propertyTag}) {
 
