@@ -18,13 +18,13 @@ function Weapon({data}) {
     }
 
     const CastToDamageType = (id) => {
-        Axios.get(API_URL+'/types/get/'+id).then((res) => {
+        Axios.get('https://collinkrueger-weapons.herokuapp.com/types/get/'+id).then((res) => {
             setDamageType(res.data)
         })
     }
 
     const CastToWeaponClass = (id) => {
-        Axios.get(API_URL+'/weaponclasses/get/'+id).then((res) => {
+        Axios.get('https://collinkrueger-weapons.herokuapp.com/weaponclasses/get/'+id).then((res) => {
             setWeaponClass(res.data);
         })
     }

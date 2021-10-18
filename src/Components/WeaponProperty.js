@@ -9,7 +9,7 @@ function WeaponProperty({propertyID, propertyTag}) {
     const [property, setProperty] = useState({});
 
     const GetPropertyFromId = useCallback(() => {
-        Axios.get(API_URL+'/properties/get/'+propertyID).then((res) => {
+        Axios.get('https://collinkrueger-weapons.herokuapp.com/properties/get/'+propertyID).then((res) => {
             setProperty(res.data);
         })
     }, [propertyID]);

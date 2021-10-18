@@ -21,7 +21,7 @@ const WeaponTable = () => {
 
   const GetWeapons = useCallback( async () => {
     console.log("did this");
-    Axios.get(API_URL+'/weapons/getAll').then((res) => {
+    Axios.get('https://collinkrueger-weapons.herokuapp.com/weapons/getAll').then((res) => {
       setAllWeapons(res.data);
     })
   }, []);
