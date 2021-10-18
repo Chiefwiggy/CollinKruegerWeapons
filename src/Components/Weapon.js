@@ -4,7 +4,7 @@ import Tooltip from './Tooltip';
 import WeaponProperty from './WeaponProperty'
 import WeaponClassBox from './WeaponClassBox';
 
-const API_URL = "http://localhost:3001";
+const API_URL = "https://collinkrueger-weapons.herokuapp.com";
 
 function Weapon({data}) {
 

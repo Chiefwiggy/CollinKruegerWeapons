@@ -4,7 +4,7 @@ import Weapon from './Weapon'
 import '../Styles/grid.css';
 import '../Styles/weapon-styles.css'
 
-const API_URL = "http://localhost:3001";
+const API_URL = "https://collinkrueger-weapons.herokuapp.com";
 
 const WeaponTable = () => {
   const [weaponData, setWeaponData] = useState([]);
